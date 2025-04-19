@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Học Toán Lớp 12</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-blue-600 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold text-center">Học Toán Lớp 12</h1>
+    <p class="text-center mt-2 text-lg">Tài nguyên học tập giúp bạn nắm vững kiến thức Toán lớp 12</p>
+  </header>
+
+  <main class="flex-grow container mx-auto px-4 py-8 space-y-12 max-w-4xl">
+    <section id="algebra" class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4 flex items-center">
+        <i class="fas fa-square-root-alt mr-3 text-blue-600"></i> Đại số
+      </h2>
+      <p>Đại số lớp 12 bao gồm các kiến thức về hàm số, phương trình, bất phương trình, và các phép biến đổi đại số.</p>
+      <ul class="list-disc list-inside mt-3 space-y-1">
+        <li>Hàm số mũ và logarit</li>
+        <li>Phương trình và bất phương trình mũ, logarit</li>
+        <li>Giới hạn và liên tục của hàm số</li>
+      </ul>
+      <div class="mt-4 p-4 bg-blue-50 rounded border border-blue-200">
+        <h3 class="font-semibold mb-2">Ví dụ:</h3>
+        <p>Giải phương trình: <span class="font-mono">2^x + 3^x = 5</span></p>
+      </div>
+    </section>
+
+    <section id="calculus" class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4 flex items-center">
+        <i class="fas fa-calculator mr-3 text-green-600"></i> Giải tích
+      </h2>
+      <p>Giải tích lớp 12 tập trung vào đạo hàm, tích phân và ứng dụng của chúng trong việc giải quyết các bài toán thực tế.</p>
+      <ul class="list-disc list-inside mt-3 space-y-1">
+        <li>Đạo hàm và ứng dụng</li>
+        <li>Tích phân và ứng dụng</li>
+        <li>Khảo sát hàm số</li>
+      </ul>
+      <div class="mt-4 p-4 bg-green-50 rounded border border-green-200">
+        <h3 class="font-semibold mb-2">Ví dụ:</h3>
+        <p>Tính đạo hàm của hàm số: <span class="font-mono">f(x) = x^3 - 5x + 2</span></p>
+      </div>
+    </section>
+
+    <section id="geometry" class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4 flex items-center">
+        <i class="fas fa-ruler-combined mr-3 text-purple-600"></i> Hình học
+      </h2>
+      <p>Hình học lớp 12 bao gồm các kiến thức về hình học không gian, mặt phẳng, và các định lý quan trọng.</p>
+      <ul class="list-disc list-inside mt-3 space-y-1">
+        <li>Hình học không gian</li>
+        <li>Phương pháp tọa độ trong không gian</li>
+        <li>Đường thẳng, mặt phẳng, và góc trong không gian</li>
+      </ul>
+      <div class="mt-4 p-4 bg-purple-50 rounded border border-purple-200">
+        <h3 class="font-semibold mb-2">Ví dụ:</h3>
+        <p>Tính khoảng cách từ điểm đến mặt phẳng trong không gian.</p>
+      </div>
+    </section>
+
+    <section id="practice" class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4 flex items-center">
+        <i class="fas fa-pencil-alt mr-3 text-yellow-600"></i> Bài tập thực hành
+      </h2>
+      <p>Thực hành là cách tốt nhất để nắm vững kiến thức. Dưới đây là một số bài tập mẫu:</p>
+      <ol class="list-decimal list-inside mt-3 space-y-2">
+        <li>Giải phương trình: <span class="font-mono">log_2(x^2 - 3x + 2) = 3</span></li>
+        <li>Tính tích phân: <span class="font-mono">∫(2x^3 - 5x + 1) dx</span></li>
+        <li>Tính khoảng cách giữa hai điểm trong không gian 3 chiều.</li>
+      </ol>
+    </section>
+  </main>
+
+  <section id="tutor" class="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto mb-12">
+    <h2 class="text-2xl font-semibold mb-4 flex items-center">
+      <i class="fas fa-robot mr-3 text-indigo-600"></i> Trợ lý học tập
+    </h2>
+    <p>Hãy đặt câu hỏi về Toán lớp 12, trợ lý sẽ cố gắng giúp bạn giải đáp.</p>
+    <div class="mt-4 flex flex-col sm:flex-row gap-4">
+      <input id="questionInput" type="text" placeholder="Nhập câu hỏi của bạn ở đây..." class="flex-grow border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <button id="askButton" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition">Hỏi</button>
+    </div>
+    <div id="answer" class="mt-6 p-4 bg-indigo-50 rounded border border-indigo-200 min-h-[80px]"></div>
+  </section>
+
+  <footer class="bg-gray-200 text-center p-4 text-gray-600">
+    &copy; 2024 Học Toán Lớp 12 - Tài nguyên miễn phí
+  </footer>
+
+  <script>
+    const askButton = document.getElementById('askButton');
+    const questionInput = document.getElementById('questionInput');
+    const answerDiv = document.getElementById('answer');
+
+    const answers = {
+      "hàm số mũ": "Hàm số mũ là hàm số có dạng f(x) = a^x với a > 0 và a ≠ 1.",
+      "logarit": "Logarit là phép toán nghịch đảo của hàm số mũ, ví dụ log_a(b) là số mũ mà a phải nâng lên để được b.",
+      "đạo hàm": "Đạo hàm biểu thị tốc độ thay đổi của hàm số tại một điểm, ký hiệu là f'(x) hoặc dy/dx.",
+      "tích phân": "Tích phân là phép toán ngược lại của đạo hàm, dùng để tính diện tích dưới đường cong.",
+      "giới hạn": "Giới hạn của hàm số mô tả giá trị mà hàm tiến tới khi biến số tiến gần một điểm nhất định.",
+      "phương trình": "Phương trình là biểu thức toán học có chứa dấu bằng, cần tìm giá trị biến để biểu thức đúng.",
+      "bất phương trình": "Bất phương trình là biểu thức toán học có chứa dấu lớn hơn, nhỏ hơn, hoặc bằng không.",
+      "hình học không gian": "Hình học không gian nghiên cứu các hình khối và vị trí trong không gian ba chiều.",
+      "khoảng cách": "Khoảng cách trong hình học là độ dài ngắn nhất giữa hai điểm hoặc từ điểm đến mặt phẳng.",
+      "khảo sát hàm số": "Khảo sát hàm số là quá trình phân tích tính chất của hàm số như đồng biến, nghịch biến, cực trị."
+    };
+
+    function getAnswer(question) {
+      question = question.toLowerCase();
+      for (const key in answers) {
+        if (question.includes(key)) {
+          return answers[key];
+        }
+      }
+      return "Xin lỗi, tôi chưa có câu trả lời cho câu hỏi này. Bạn có thể thử hỏi câu khác hoặc tìm hiểu thêm trong các phần kiến thức.";
+    }
+
+    askButton.addEventListener('click', () => {
+      const question = questionInput.value.trim();
+      if (!question) {
+        answerDiv.textContent = "Vui lòng nhập câu hỏi.";
+        return;
+      }
+      answerDiv.textContent = "Đang tìm câu trả lời...";
+      setTimeout(() => {
+        const response = getAnswer(question);
+        answerDiv.textContent = response;
+      }, 800);
+    });
+
+    questionInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        askButton.click();
+      }
+    });
+  </script>
+</body>
+</html>
